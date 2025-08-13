@@ -44,7 +44,7 @@ function App() {
       setError(null);
       
       // 调用后端 API 获取图片数据
-      const response = await fetch(`http://localhost:3001/images?page=${page}&limit=9`);
+      const response = await fetch(`/api/images?page=${page}&limit=9`);
       
       if (!response.ok) {
         throw new Error('获取图片失败');
